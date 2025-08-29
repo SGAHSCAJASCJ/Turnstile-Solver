@@ -84,6 +84,7 @@ This is a high-performance Cloudflare Turnstile CAPTCHA automatic solving soluti
 ### 安装依赖 / Install Dependencies
 ```bash
 pip install fastapi uvicorn camoufox patchright loguru
+python -m camoufox fetch
 ```
 
 ### 配置文件 / Configuration
