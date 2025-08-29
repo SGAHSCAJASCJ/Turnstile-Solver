@@ -88,7 +88,7 @@ python -m camoufox fetch
 ```
 
 ### 配置文件 / Configuration
-创建 `utils/config.py` 文件：
+创建 `api_server.py` 文件：
 ```python
 # 以无头模式运行浏览器 / Run browser in headless mode
 headless = True
