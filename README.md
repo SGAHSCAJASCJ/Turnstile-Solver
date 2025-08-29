@@ -9,7 +9,7 @@ This is a high-performance Cloudflare Turnstile CAPTCHA automatic solving soluti
 ## ✨ 核心优势 / Key Advantages
 
 ### 🔥 高并发处理 / High Concurrency
-- **异步架构**：基于Python asyncio和FastAPI，支持数千个并发请求
+- **异步架构**：基于Python asyncio和FastAPI，支持数十个并发请求
 - **页面池管理**：智能页面池技术，复用浏览器实例，减少资源开销
 - **任务队列**：内置任务队列机制，合理分配计算资源
 - **负载均衡**：自动负载控制，防止服务器过载
