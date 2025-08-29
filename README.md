@@ -93,17 +93,12 @@ python -m camoufox fetch
 # 以无头模式运行浏览器 / Run browser in headless mode
 headless = True
 
-# 浏览器类型 / Browser type
-browser_type = 'camoufox'
-
 # 浏览器实例数量(线程数) / Number of browser instances (threads)
 thread = 2
 
 # 每个浏览器实例的页面数量 / Pages per browser instance
 page_count = 1
 
-# 是否启用代理支持 / Enable proxy support
-proxy_support = True
 
 # 绑定主机 / Bind host
 host = "0.0.0.0"
