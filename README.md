@@ -1,69 +1,24 @@
-# Turnstile验证码解决方案 / Turnstile CAPTCHA Solver
+# Turnstile CAPTCHA Solver
 
-## 🚀 项目简介 / Project Overview
-
-这是一个高性能的Cloudflare Turnstile验证码自动解决方案，基于FastAPI和异步浏览器技术构建，提供RESTful API接口服务。
-
+## 🚀 Project Overview
 This is a high-performance Cloudflare Turnstile CAPTCHA automatic solving solution built with FastAPI and asynchronous browser technology, providing RESTful API services.Available until the current time, still available
-
-## ✨ 核心优势 / Key Advantages
-
-### 🔥 高并发处理 / High Concurrency
-- **异步架构**：基于Python asyncio和FastAPI，支持数十个并发请求
-- **页面池管理**：智能页面池技术，复用浏览器实例，减少资源开销
-- **任务队列**：内置任务队列机制，合理分配计算资源
-- **负载均衡**：自动负载控制，防止服务器过载
 
 - **Asynchronous Architecture**: Built on Python asyncio and FastAPI, supporting thousands of concurrent requests
 - **Page Pool Management**: Intelligent page pool technology, reusing browser instances to reduce resource overhead
 - **Task Queue**: Built-in task queue mechanism for reasonable resource allocation
 - **Load Balancing**: Automatic load control to prevent server overload
 
-### ⚡ 极速响应 / Lightning Fast
-- **平均解决时间**：2-8秒完成验证码识别
-- **预热机制**：浏览器实例预加载，零冷启动时间
-- **智能重试**：最多30次智能重试机制，提高成功率
-- **内存优化**：高效内存管理，支持长时间稳定运行
-
 - **Average Solving Time**: 2-8 seconds for CAPTCHA recognition
 - **Warm-up Mechanism**: Browser instance preloading with zero cold start time
 - **Smart Retry**: Up to 30 intelligent retry attempts for higher success rates
 - **Memory Optimization**: Efficient memory management for long-term stable operation
-
-### 🛡️ 稳定可靠 / Stable & Reliable
-- **异常处理**：完善的异常捕获和错误恢复机制
-- **资源清理**：定期清理过期任务和浏览器资源
-- **监控日志**：详细的运行日志和性能监控
-- **超时保护**：5分钟任务超时机制，防止资源泄漏
 
 - **Exception Handling**: Comprehensive exception catching and error recovery mechanisms
 - **Resource Cleanup**: Regular cleanup of expired tasks and browser resources
 - **Monitoring Logs**: Detailed runtime logs and performance monitoring
 - **Timeout Protection**: 5-minute task timeout mechanism to prevent resource leaks
 
-## 🏗️ 技术架构 / Technical Architecture
-
-### 核心技术栈 / Core Technology Stack
-- **FastAPI**: 现代化的Python Web框架，支持自动API文档生成
-- **Camoufox**: 基于camoufox的反检测浏览器，绕过各种检测机制
-- **Asyncio**: Python异步编程，实现高并发处理
-- **Uvicorn**: 高性能ASGI服务器
-
-### 架构特点 / Architecture Features
-```
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│   API Gateway   │───▶│   Task Manager   │───▶│   Browser Pool  │
-│   (FastAPI)     │    │   (AsyncIO)      │    │   (Camoufox)    │
-└─────────────────┘    └──────────────────┘    └─────────────────┘
-         │                       │                       │
-         ▼                       ▼                       ▼
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│  Request Queue  │    │  Result Storage  │    │  Proxy Manager  │
-│   (In-Memory)   │    │   (In-Memory)    │    │   (File-based)  │
-└─────────────────┘    └──────────────────┘    └─────────────────┘
-```
-
-## 📊 性能指标 / Performance Metrics
+## 📊 Performance Metrics
 
 | 指标 / Metric | 数值 / Value | 说明 / Description |
 |---------------|--------------|--------------------|
@@ -142,7 +97,7 @@ GET /result?id=task_id
 }
 ```
 
-## 🔧 高级配置 / Advanced Configuration
+## 🔧 Advanced Configuration
 
 ### 性能调优 / Performance Tuning
 - **线程数配置**：建议设置为CPU核心数
@@ -150,29 +105,15 @@ GET /result?id=task_id
 - **代理轮换**：启用代理支持可提高成功率
 - **内存监控**：定期监控内存使用情况
 
-### 监控和日志 / Monitoring & Logging
-- 详细的请求日志记录
-- 性能指标实时监控
-- 错误率统计和告警
-- 资源使用情况追踪
-
-## 🤝 支持项目 / Support the Project
-
-如果这个项目对您有帮助，欢迎支持我的开发工作！
+## 🤝 Support the Project
 
 If this project helps you, welcome to support our development work!
 
-### 💰 捐赠 / Donation
+### 💰 Donation
 **以太坊钱包地址 / Ethereum Wallet Address:**
 ```
 0x44b8f11e77ef75fb10f6cc41a926da26ab91b631
 ```
-
-您的支持将帮助我们：
-- 持续改进和优化代码
-- 添加更多功能特性
-- 提供更好的技术支持
-- 维护项目的长期发展
 
 Your support will help us:
 - Continuously improve and optimize the code
@@ -180,11 +121,11 @@ Your support will help us:
 - Provide better technical support
 - Maintain long-term project development
 
-## 📄 许可证 / License
+## 📄 License
 
 MIT License - 详见 LICENSE 文件
 
-## 🔗 相关链接 / Related Links
+## 🔗 Related Links
 
 - [FastAPI 官方文档](https://fastapi.tiangolo.com/)
 - [Camoufox 项目](https://github.com/daijro/camoufox)
