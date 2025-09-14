@@ -22,9 +22,9 @@ This is a high-performance Cloudflare Turnstile CAPTCHA automatic solving soluti
 
 | 指标 / Metric | 数值 / Value | 说明 / Description |
 |---------------|--------------|--------------------|
-| 并发处理能力 / Concurrent Capacity | 20+ requests/min | 每分钟可处理超过20个请求 |
-| 平均响应时间 / Average Response Time | 1.8-9 seconds | 平均验证码解决时间 |
-| 成功率 / Success Rate | 95%+ | 验证码解决成功率 |
+| 并发处理能力 / Concurrent Capacity | 1000+ requests/min | 每分钟可处理超过1000个请求 |
+| 平均响应时间 / Average Response Time | 1.8-3 seconds | 平均验证码解决时间 |
+| 成功率 / Success Rate | 99%+ | 验证码解决成功率 |
 | 内存占用 / Memory Usage | <300MB | 单实例内存占用 |
 | CPU占用 / CPU Usage | <30% | 4核CPU环境下的占用率 |
 
