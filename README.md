@@ -4,7 +4,7 @@
 
 这是一个高性能的Cloudflare Turnstile验证码自动解决方案，基于FastAPI和异步浏览器技术构建，提供RESTful API接口服务。
 
-This is a high-performance Cloudflare Turnstile CAPTCHA automatic solving solution built with FastAPI and asynchronous browser technology, providing RESTful API services.
+This is a high-performance Cloudflare Turnstile CAPTCHA automatic solving solution built with FastAPI and asynchronous browser technology, providing RESTful API services.Available until the current time, still available
 
 ## ✨ 核心优势 / Key Advantages
 
