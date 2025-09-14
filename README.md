@@ -3,21 +3,6 @@
 ## 🚀 Project Overview
 This is a high-performance Cloudflare Turnstile CAPTCHA automatic solving solution built with FastAPI and asynchronous browser technology, providing RESTful API services.Available until the current time, still available
 
-- **Asynchronous Architecture**: Built on Python asyncio and FastAPI, supporting dozens of concurrent requests
-- **Page Pool Management**: Intelligent page pool technology, reusing browser instances to reduce resource overhead
-- **Task Queue**: Built-in task queue mechanism for reasonable resource allocation
-- **Load Balancing**: Automatic load control to prevent server overload
-
-- **Average Solving Time**: 2-8 seconds for CAPTCHA recognition
-- **Warm-up Mechanism**: Browser instance preloading with zero cold start time
-- **Smart Retry**: Up to 30 intelligent retry attempts for higher success rates
-- **Memory Optimization**: Efficient memory management for long-term stable operation
-
-- **Exception Handling**: Comprehensive exception catching and error recovery mechanisms
-- **Resource Cleanup**: Regular cleanup of expired tasks and browser resources
-- **Monitoring Logs**: Detailed runtime logs and performance monitoring
-- **Timeout Protection**: 5-minute task timeout mechanism to prevent resource leaks
-
 ## 📊 Performance Metrics
 
 | 指标 / Metric | 数值 / Value | 说明 / Description |
