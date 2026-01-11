@@ -1,4 +1,4 @@
-# Turnstile CAPTCHA Solver
+# Turnstile CAPTCHA Solver 
 
 ## 🚀 Project Overview
 This is a high-performance Cloudflare Turnstile CAPTCHA automatic solving solution built with FastAPI and asynchronous browser technology, providing RESTful API services.Available until the current time, still available
