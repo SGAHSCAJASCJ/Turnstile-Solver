@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  turnstile_solver:
+    build: .
+    container_name: turnstile_solver
+    restart: always
+    ports:
+      - "8000:8000"
+
+    environment:
+      - PYTHONUNBUFFERED=1
+
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: 2G
+
+    shm_size: "2gb"
