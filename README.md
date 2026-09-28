@@ -1,54 +1,49 @@
-# Turnstile CAPTCHA Solver(Turnstile风控已改,请使用代理生产token)
+# Turnstile CAPTCHA Solver
+
+## Quick Start
 
 
-## 🚀 快速开始 / Quick Start
+### Environmental Requirements
 
-### 环境要求 / Requirements
+
 - Python 3.8+
-- Windows/Linux/macOS
-- 1GB+ RAM
-- 稳定的网络连接
+- Windows / Linux / macOS
+- 1 GB RAM
 
-### 安装依赖 / Install Dependencies
+### Install
+
 ```bash
 pip install fastapi uvicorn camoufox loguru
 python -m camoufox fetch
 ```
 
-### 配置文件 / Configuration
-edit `api_server.py` 文件：
+### Config
+
+edit `api_server.py`：
+
 ```python
-# 以无头模式运行浏览器 / Run browser in headless mode
-headless = True
+headless = True 
+thread = 2      
+page_count = 1   
 
-# 浏览器实例数量(线程数) / Number of browser instances (threads)
-thread = 2
-
-# 每个浏览器实例的页面数量 / Pages per browser instance
-page_count = 1
-
-
-# 绑定主机 / Bind host
 host = "0.0.0.0"
-
-# 绑定端口 / Bind port
 port = 8000
 ```
 
+### Start
 
-### 启动服务 / Start Service
 ```bash
 python api_server.py
 ```
 
-## 📖 API文档 / API Documentation
+## API
 
-### 提交验证码任务 / Submit CAPTCHA Task
+### Submit task
+
 ```http
 GET /turnstile?url=https://example.com&sitekey=0x4AAAAAAA...
 ```
 
-**响应 / Response:**
 ```json
 {
   "task_id": "uuid-string",
@@ -56,12 +51,12 @@ GET /turnstile?url=https://example.com&sitekey=0x4AAAAAAA...
 }
 ```
 
-### 获取解决结果 / Get Solution Result
+### Search Results
+
 ```http
 GET /result?id=task_id
 ```
 
-**响应 / Response:**
 ```json
 {
   "status": "success",
@@ -70,5 +65,6 @@ GET /result?id=task_id
 }
 ```
 
+**High Performance · Easy to Deploy · Stable and Reliable**
 
-**⚡ 高性能 | 🚀 易部署 | 🛡️ 稳定可靠 **
+Need a faster, enterprise-grade protocol-level solution? Contact me on Telegram at @Lu_mingfeihuizhang to purchase the source code or lease the API.
