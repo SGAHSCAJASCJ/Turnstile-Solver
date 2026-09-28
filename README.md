@@ -1,4 +1,4 @@
-# Turnstile CAPTCHA Solver
+# Turnstile CAPTCHA Solver(Turnstile风控已改,请使用代理生产token)
 
 
 ## 🚀 快速开始 / Quick Start
